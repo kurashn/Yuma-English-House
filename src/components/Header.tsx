@@ -53,7 +53,7 @@ export default function Header() {
                 {/* Mobile Menu Button */}
                 <button
                     onClick={toggleMenu}
-                    className="md:hidden flex items-center justify-center w-12 h-12 text-gray-700 hover:text-primary focus:outline-none cursor-pointer z-50"
+                    className="md:hidden flex items-center justify-center w-12 h-12 text-gray-700 hover:text-primary focus:outline-none cursor-pointer relative z-50"
                     aria-label="Toggle menu"
                 >
                     {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
