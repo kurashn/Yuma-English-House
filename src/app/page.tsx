@@ -11,7 +11,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative pt-20 pb-12 md:pt-32 md:pb-24 overflow-hidden bg-gradient-to-b from-yellow-50 to-white">
+      <section className="relative pt-32 pb-12 md:pt-40 md:pb-24 overflow-hidden bg-gradient-to-b from-yellow-50 to-white">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 text-center md:text-left z-10">
             <div className="inline-block bg-yellow-300 text-yellow-900 font-bold px-4 py-1 rounded-full text-sm md:text-base mb-2 animate-bounce">
@@ -29,10 +29,10 @@ export default function Home() {
             <div className="pt-4">
               <a
                 href="https://lin.ee/LF8WT5R"
-                className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white text-base md:text-xl font-bold py-3 px-6 md:py-4 md:px-8 rounded-full shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 w-full md:w-auto"
+                className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white text-sm sm:text-base md:text-xl font-bold py-3 px-4 md:py-4 md:px-8 rounded-full shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 w-full md:w-auto whitespace-nowrap"
               >
                 LINE登録で「合格3大特典」を受け取る
-                <ArrowRight className="w-6 h-6" />
+                <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
               </a>
               <p className="text-xs text-gray-500 mt-2">※無理な勧誘は一切ありません</p>
             </div>
