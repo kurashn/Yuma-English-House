@@ -24,11 +24,11 @@ export default function Header() {
     ];
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <header className="fixed top-0 left-0 right-0 z-[100] bg-white/90 backdrop-blur-md shadow-sm">
             <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-                <div className="font-bold text-xl md:text-2xl text-primary tracking-tight">
+                <Link href="/" className="font-bold text-xl md:text-2xl text-primary tracking-tight hover:opacity-80 transition-opacity">
                     Yuma English House
-                </div>
+                </Link>
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-6">
