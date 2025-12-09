@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Yuma English House | 小学生向け英検対策コース",
   description: "富士市の小学生向け英検対策ならYuma English House。ティーチング×コーチングで自信を育て、英検二次試験合格率100%を実現。",
+  icons: {
+    icon: "/images/favicon.jpeg",
+  },
 };
 
 import StickyBanner from "@/components/StickyBanner";
