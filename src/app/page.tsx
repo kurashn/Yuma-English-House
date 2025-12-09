@@ -17,7 +17,7 @@ export default function Home() {
             <div className="inline-block bg-yellow-300 text-yellow-900 font-bold px-4 py-1 rounded-full text-sm md:text-base mb-2 animate-bounce">
               小学生の保護者様へ
             </div>
-            <h1 className="text-lg sm:text-2xl md:text-5xl font-bold leading-tight text-gray-900 mb-4 tracking-tight">
+            <h1 className="text-[1.3rem] sm:text-3xl md:text-5xl font-bold leading-tight text-gray-900 mb-4 tracking-tight">
               <span className="whitespace-nowrap">英語が苦手な子でも</span><br />
               <span className="whitespace-nowrap"><span className="text-primary">「自信」</span>を育てて</span><br />
               <span className="whitespace-nowrap"><span className="text-primary">「英検合格」</span>を手に入れる</span>
