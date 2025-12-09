@@ -17,7 +17,7 @@ export default function Home() {
             <div className="inline-block bg-yellow-300 text-yellow-900 font-bold px-4 py-1 rounded-full text-sm md:text-base mb-2 animate-bounce">
               小学生の保護者様へ
             </div>
-            <h1 className="text-[1.7rem] sm:text-3xl md:text-5xl font-bold leading-tight text-gray-900 mb-4 tracking-tight">
+            <h1 className="text-[1.7rem] sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight text-gray-900 mb-4 tracking-tight">
               <span className="whitespace-nowrap">英語が苦手な子でも</span><br />
               <span className="whitespace-nowrap"><span className="text-primary">「自信」</span>を育てて</span><br />
               <span className="whitespace-nowrap"><span className="text-primary">「英検合格」</span>を手に入れる</span>
@@ -403,7 +403,7 @@ export default function Home() {
 
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-sm">
-            &copy; {new Date().getFullYear()} Yuma English House. All Rights Reserved. (v1.0.2)
+            &copy; {new Date().getFullYear()} Yuma English House. All Rights Reserved. (v1.0.3)
           </div>
         </div>
       </footer>

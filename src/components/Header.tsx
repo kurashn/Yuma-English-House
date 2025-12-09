@@ -31,7 +31,7 @@ export default function Header() {
                 </Link>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden md:flex items-center gap-6">
+                <nav className="hidden lg:flex items-center gap-6">
                     {navItems.map((item) => (
                         <Link
                             key={item.label}
@@ -53,7 +53,7 @@ export default function Header() {
                 {/* Mobile Menu Button */}
                 <button
                     onClick={toggleMenu}
-                    className="md:hidden flex items-center justify-center w-12 h-12 text-gray-700 hover:text-primary focus:outline-none cursor-pointer relative z-50"
+                    className="lg:hidden flex items-center justify-center w-12 h-12 text-gray-700 hover:text-primary focus:outline-none cursor-pointer relative z-50"
                     aria-label="Toggle menu"
                 >
                     {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
@@ -62,7 +62,7 @@ export default function Header() {
 
             {/* Mobile Menu Overlay */}
             {isMenuOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-100 py-4 px-4 flex flex-col gap-4 animate-in slide-in-from-top-5 duration-200">
+                <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-100 py-4 px-4 flex flex-col gap-4 animate-in slide-in-from-top-5 duration-200">
                     {navItems.map((item) => (
                         <Link
                             key={item.label}
