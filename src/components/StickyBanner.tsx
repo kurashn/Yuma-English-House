@@ -44,7 +44,7 @@ const StickyBanner = () => {
               期間限定
             </div>
             <p className="text-lg font-bold text-gray-800">
-              小学生の英検対策ならYuma English House。
+              小中高生の英検対策ならYuma English House。
               <span className="text-green-600">公式LINE登録</span>で
               <span className="text-orange-500">「合格3大特典」</span>
               を無料プレゼント中！

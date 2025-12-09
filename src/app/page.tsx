@@ -15,7 +15,7 @@ export default function Home() {
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 text-center lg:text-left z-10">
             <div className="inline-block bg-yellow-300 text-yellow-900 font-bold px-4 py-1 rounded-full text-sm md:text-base mb-2 animate-bounce">
-              小学生の保護者様へ
+              小中高生の保護者様へ
             </div>
             <h1 className="text-[1.7rem] sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight text-gray-900 mb-4 tracking-tight">
               <span className="whitespace-nowrap">英語が苦手な子でも</span><br />
@@ -135,7 +135,7 @@ export default function Home() {
                   二次試験合格率100%の実績
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
-                  小学生には難しい面接対策も、独自の攻略法でバッチリ対策。入室から退室までのマナーも含め、自信を持って話せるようになるまで徹底サポートします。
+                  小中高生には難しい面接対策も、独自の攻略法でバッチリ対策。入室から退室までのマナーも含め、自信を持って話せるようになるまで徹底サポートします。
                 </p>
               </div>
               <div className="order-2">
@@ -272,7 +272,7 @@ export default function Home() {
 
             {[
               { step: "STEP 01", title: "LINE登録", desc: "まずは公式LINEに登録して、無料特典をお受け取りください。", icon: <MessageCircle size={32} /> },
-              { step: "STEP 02", title: "無料相談", desc: "LINEから簡単に予約できます。お子様の現状や目標をお聞かせください。", icon: <Users size={32} /> },
+              { step: "STEP 02", title: "無料カウンセリング", desc: "LINEから簡単に予約できます。お子様の現状や目標をお聞かせください。", icon: <Users size={32} /> },
               { step: "STEP 03", title: "体験レッスン", desc: "実際のレッスンを体験。教室の雰囲気や指導法をチェック！", icon: <BookOpen size={32} /> },
               { step: "STEP 04", title: "受講スタート", desc: "気に入っていただけたら入会。目標に向かって一緒に頑張りましょう！", icon: <CheckCircle size={32} /> },
             ].map((item, index) => (
@@ -343,7 +343,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
             {[
-              { title: "小学生向け\n英検スピーキング\n完全攻略ブック", icon: <BookOpen size={48} />, label: "PDF冊子" },
+              { title: "小中高生向け\n英検スピーキング\n完全攻略ブック", icon: <BookOpen size={48} />, label: "PDF冊子" },
               { title: "魔法の\nフォニックス\nチャート", icon: <Users size={48} />, label: "ポスター" },
               { title: "完全オーダーメイド\n学習ロードマップ\n作成", icon: <CheckCircle size={48} />, label: "個別相談" },
             ].map((gift, index) => (
@@ -398,7 +398,7 @@ export default function Home() {
               <div className="text-2xl font-bold text-white mb-2">Yuma English House</div>
               <p>〒416-0949 静岡県富士市森下53-16</p>
               <p className="mt-1">代表名：竹内裕馬</p>
-              <p className="mt-2">小学生専門 / 英検対策 / コーチング</p>
+              <p className="mt-2">英検コーチング専門 / 英検対策 / コーチング</p>
             </div>
 
           </div>

@@ -46,7 +46,7 @@ export default function Header() {
                         className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full transition-all shadow-md hover:shadow-lg"
                     >
                         <MessageCircle size={20} />
-                        LINEで無料相談
+                        LINEで無料カウンセリング
                     </a>
                 </nav>
 
@@ -79,7 +79,7 @@ export default function Header() {
                         className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition-all shadow-md mt-2"
                     >
                         <MessageCircle size={20} />
-                        LINEで無料相談
+                        LINEで無料カウンセリング
                     </a>
                 </div>
             )}
