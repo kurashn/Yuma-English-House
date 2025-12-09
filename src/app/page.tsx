@@ -93,7 +93,7 @@ export default function Home() {
       </section>
 
       {/* Solution Section */}
-      <section className="py-12 md:py-20 bg-white">
+      <section id="reason" className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <span className="text-primary font-bold tracking-wider uppercase">Our Method</span>
@@ -179,7 +179,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-12 md:py-20 bg-yellow-50">
+      <section id="voice" className="py-12 md:py-20 bg-yellow-50">
         <div className="container mx-auto px-4">
           <h2 className="text-center text-3xl font-bold text-gray-900 mb-12">
             保護者様の<span className="text-primary">喜びの声</span>
@@ -229,7 +229,7 @@ export default function Home() {
       </section>
 
       {/* Instructor Section */}
-      <section className="py-12 md:py-20 bg-white">
+      <section id="teacher" className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-orange-50 rounded-3xl p-8 md:p-12 shadow-lg flex flex-col md:flex-row gap-10 items-center">
             <div className="w-48 h-48 md:w-64 md:h-64 relative shrink-0">
@@ -261,7 +261,7 @@ export default function Home() {
       </section>
 
       {/* Flow Section */}
-      <section className="py-12 md:py-20 bg-white">
+      <section id="flow" className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-center text-3xl font-bold text-gray-900 mb-16">
             受講までの<span className="text-primary">流れ</span>
@@ -290,7 +290,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-12 md:py-20 bg-gray-50">
+      <section id="faq" className="py-12 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-center text-3xl font-bold text-gray-900 mb-12">
             よくある<span className="text-primary">ご質問</span>
