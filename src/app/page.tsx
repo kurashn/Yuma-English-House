@@ -403,7 +403,7 @@ export default function Home() {
 
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-sm">
-            &copy; {new Date().getFullYear()} Yuma English House. All Rights Reserved. (v1.0.3)
+            &copy; {new Date().getFullYear()} Yuma English House. All Rights Reserved. (v1.0.4)
           </div>
         </div>
       </footer>
