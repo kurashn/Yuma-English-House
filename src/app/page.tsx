@@ -190,7 +190,7 @@ export default function Home() {
                 小4男子の母
               </div>
               <p className="text-gray-700 mb-4 pt-2">
-                「英語なんて大嫌い！」と言っていた息子が、先生のおかげで「英語楽しい！」に変わりました。英検4級にも一発合格できて、本当に自信がついたようです。
+                「英語なんて大嫌い！」と言っていた息子が、先生のおかげで「英語楽しい！」に変わりました。英検3級にも一発合格できて、本当に自信がついたようです。
               </p>
               <div className="flex items-center gap-2 text-primary">
                 <Star className="fill-current" size={16} />
