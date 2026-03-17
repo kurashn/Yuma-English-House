@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Yuma English House | 小中高生向け英検対策コース",
-  description: "富士市の小中高生向け英検対策ならYuma English House。ティーチング×コーチングで自信を育て、英検二次試験合格率100%を実現。",
+  description: "富士市の小中高生向け英検対策ならYuma English House。ティーチング×伴走型サポートで自信を育て、英検二次試験合格率100%を実現。",
   verification: {
     google: "8TnSeZOvDFaI4Iy__uvVpzl9DFC3bj5ywiU6nHmq96k",
   },

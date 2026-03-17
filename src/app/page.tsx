@@ -109,7 +109,7 @@ export default function Home() {
                 <div className="relative h-64 w-full">
                   <Image
                     src="/images/lpfv3.jpg"
-                    alt="コーチング指導"
+                    alt="伴走型サポート"
                     fill
                     className="object-cover rounded-2xl shadow-lg"
                     unoptimized
@@ -119,7 +119,7 @@ export default function Home() {
               <div className="order-1 md:order-2">
                 <div className="text-primary font-bold text-6xl opacity-20 -mb-8 ml-4">01</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 relative z-10">
-                  否定しない「コーチング指導」
+                  否定しない「伴走型サポート」
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
                   「間違えたらどうしよう」という不安を取り除きます。小さな成功を見逃さずに褒めることで、お子様の自己肯定感を高め、自ら学ぶ意欲を引き出します。
@@ -398,7 +398,7 @@ export default function Home() {
               <div className="text-2xl font-bold text-white mb-2">Yuma English House</div>
               <p>〒416-0949 静岡県富士市森下53-16</p>
               <p className="mt-1">代表名：竹内裕馬</p>
-              <p className="mt-2">英検コーチング専門 / 英検対策 / コーチング</p>
+              <p className="mt-2">英検伴走サポート専門 / 英検対策 / 伴走型サポート</p>
             </div>
 
           </div>
