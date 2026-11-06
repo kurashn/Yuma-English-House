@@ -8,7 +8,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-geist-sans), "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
   --font-mono: var(--font-geist-mono);
   --color-primary: #ebca11;
   --color-primary-foreground: #171717;
@@ -25,11 +25,50 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* 固定ヘッダーの下に見出しが隠れないように */
+section[id] {
+  scroll-margin-top: 72px;
+}
+
+/* 日本語の折り返し：見出しは行の長さをそろえ、本文は最終行に1〜2文字だけ残さない */
+h1,
+h2,
+h3 {
+  line-break: strict;
+  text-wrap: balance;
+}
+
+p,
+li,
+dd {
+  line-break: strict;
+  text-wrap: pretty;
+}
+
+/* ブランドの黄色は、文字色ではなくマーカーとして使う（白地の黄色い文字は読みにくいため） */
+.marker {
+  background: linear-gradient(transparent 60%, rgb(235 202 17 / 0.55) 60%);
+  padding: 0 0.08em;
+}
+
+/* よくある質問の開閉 */
+.faq summary {
+  list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq[open] .faq-chevron {
+  transform: rotate(180deg);
 }
 
 @keyframes shimmer {
@@ -60,4 +99,15 @@ html {
 
 .animate-bounce-subtle {
   animation: bounce-subtle 2s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-shimmer,
+  .animate-bounce-subtle {
+    animation: none;
+  }
 }
