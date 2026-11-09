@@ -40,7 +40,7 @@ const PRICES = [
 ];
 
 const FAQS = [
-  { q: "体験は|できますか？", a: "はい、無料でできます。まずオンラインの無料カウンセリングで今の英語力や学習状況をお聞きし、そのあと教室で体験レッスンを受けていただけます。ご希望の時間帯はLINEでお知らせください。" },
+  { q: "体験は|できますか？", a: "はい、無料でできます。LINEでご希望の時間帯をお知らせください。当日はレベルチェックとカウンセリングで、今の英語力とこれまでの学習状況を確認します。" },
   { q: "何歳から|通えますか？", a: "小学2年生ごろから受講いただけます。アルファベットの大文字が半分くらい分かれば大丈夫です。" },
   { q: "受ける級が|決まっていなくても|大丈夫ですか？", a: "大丈夫です。受験する級や今の英語力、学習方法がまだ決まっていなくてもご相談いただけます。レベルチェックとカウンセリングで、目標の級を一緒に決めていきます。" },
   { q: "オンラインでの|受講は可能ですか？", a: "はい、可能です。お子様の学習効率を考えると教室にお越しいただくのがおすすめですが、体調や天候、ご要望に合わせてオンラインでも受講いただけます。" },
@@ -78,7 +78,7 @@ export default function Home() {
               ))}
             </ul>
             <div className="pt-1">
-              <p className="text-sm font-bold text-orange-700 mb-2">＼ カウンセリングも体験レッスンも無料 ／</p>
+              <p className="text-sm font-bold text-orange-700 mb-2">＼ 体験は無料です ／</p>
               <a
                 href={LINE_URL}
                 data-cta="hero"
@@ -359,7 +359,7 @@ export default function Home() {
               </div>
               <div>
                 <dt className="text-sm font-bold text-yellow-800">はじめての方</dt>
-                <dd className="text-gray-900 font-medium">カウンセリング（オンライン）と体験レッスン（教室）は無料です</dd>
+                <dd className="text-gray-900 font-medium">体験は無料です。当日はレベルチェックとカウンセリングを行います</dd>
               </div>
             </dl>
             <div className="bg-white rounded-2xl shadow-md p-6">
@@ -400,15 +400,14 @@ export default function Home() {
           <h2 className="text-center text-3xl font-bold text-gray-900 mb-16">
             受講までの<span className="marker">流れ</span>
           </h2>
-          <div className="max-w-5xl mx-auto grid md:grid-cols-4 gap-8 relative">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 relative">
             {/* Connecting Line (Desktop) */}
             <div className="hidden md:block absolute top-12 left-0 w-full h-1 bg-gray-200 -z-10" />
 
             {[
               { step: "STEP 01", title: "LINE登録", desc: "まずは公式LINEに登録して、無料特典をお受け取りください。", icon: <MessageCircle size={32} /> },
-              { step: "STEP 02", title: "無料カウンセリング", desc: "LINEから簡単に予約できます。オンラインで、お子様の現状や目標をお聞かせください。", icon: <Users size={32} /> },
-              { step: "STEP 03", title: "無料体験レッスン", desc: "教室で実際のレッスンを体験。雰囲気や指導法をチェック！", icon: <BookOpen size={32} /> },
-              { step: "STEP 04", title: "受講スタート", desc: "気に入っていただけたら入会。目標に向かって一緒に頑張りましょう！", icon: <CheckCircle size={32} /> },
+              { step: "STEP 02", title: "無料体験", desc: "LINEからご希望の時間帯をお知らせください。当日はレベルチェックとカウンセリングで、今の英語力と学習状況を確認します。", icon: <BookOpen size={32} /> },
+              { step: "STEP 03", title: "受講スタート", desc: "気に入っていただけたら入会。目標に向かって一緒に頑張りましょう！", icon: <CheckCircle size={32} /> },
             ].map((item, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col items-center text-center relative">
                 <div className="w-24 h-24 bg-primary text-white rounded-full flex items-center justify-center mb-6 shadow-lg border-4 border-white">

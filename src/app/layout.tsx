@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 const title = "Yuma English House｜富士市の小中高生向け英検対策コース";
 const description =
-  "静岡県富士市の小中高生向け英検対策ならYuma English House。ティーチング×伴走型サポートで自信を育て、英検合格へ。対面・オンライン対応。カウンセリングと体験レッスンは無料です。";
+  "静岡県富士市の小中高生向け英検対策ならYuma English House。ティーチング×伴走型サポートで自信を育て、英検合格へ。対面・オンライン対応。体験は無料です。";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://eiken.yuma-english.com"),
