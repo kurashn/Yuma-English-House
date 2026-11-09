@@ -40,7 +40,7 @@ const PRICES = [
 ];
 
 const FAQS = [
-  { q: "体験は|できますか？", a: "はい、できます。LINEでご希望の時間帯をお知らせください。当日はレベルチェックとカウンセリングで、今の英語力とこれまでの学習状況を確認します。" },
+  { q: "体験は|できますか？", a: "はい、無料でできます。まずオンラインの無料カウンセリングで今の英語力や学習状況をお聞きし、そのあと教室で体験レッスンを受けていただけます。ご希望の時間帯はLINEでお知らせください。" },
   { q: "何歳から|通えますか？", a: "小学2年生ごろから受講いただけます。アルファベットの大文字が半分くらい分かれば大丈夫です。" },
   { q: "受ける級が|決まっていなくても|大丈夫ですか？", a: "大丈夫です。受験する級や今の英語力、学習方法がまだ決まっていなくてもご相談いただけます。レベルチェックとカウンセリングで、目標の級を一緒に決めていきます。" },
   { q: "オンラインでの|受講は可能ですか？", a: "はい、可能です。お子様の学習効率を考えると教室にお越しいただくのがおすすめですが、体調や天候、ご要望に合わせてオンラインでも受講いただけます。" },
@@ -68,7 +68,7 @@ export default function Home() {
             </h1>
             <p className="text-lg md:text-xl text-gray-600 font-medium">
               <span className="inline-block">自己肯定感が上がる英検対策コース。</span><br />
-              <span className="inline-block">二次試験合格率100%の実績で、</span><span className="inline-block">お子様の「できた！」を引き出します。</span>
+              <span className="inline-block">一次試験から二次試験の面接まで、</span><span className="inline-block">お子様の「できた！」を引き出します。</span>
             </p>
             <ul className="flex flex-wrap justify-center lg:justify-start gap-2 text-sm font-bold text-gray-700" aria-label="教室の特徴">
               {HERO_FACTS.map((fact) => (
@@ -78,7 +78,7 @@ export default function Home() {
               ))}
             </ul>
             <div className="pt-1">
-              <p className="text-sm font-bold text-orange-700 mb-2">＼ LINE登録で英検の特典3つプレゼント ／</p>
+              <p className="text-sm font-bold text-orange-700 mb-2">＼ カウンセリングも体験レッスンも無料 ／</p>
               <a
                 href={LINE_URL}
                 data-cta="hero"
@@ -108,8 +108,8 @@ export default function Home() {
                   <CheckCircle size={24} />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-600 font-bold">英検二次試験</p>
-                  <p className="text-xl font-bold text-gray-900">合格率 100%</p>
+                  <p className="text-xs text-gray-600 font-bold">合格実績</p>
+                  <p className="text-xl font-bold text-gray-900">小5で英検2級</p>
                 </div>
               </div>
             </div>
@@ -192,7 +192,7 @@ export default function Home() {
               <div className="order-1">
                 <div className="text-primary font-bold text-6xl opacity-20 -mb-8 ml-4" aria-hidden="true">02</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 relative z-10">
-                  二次試験合格率100%の実績
+                  二次試験の面接まで、しっかり対策
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
                   小中高生には難しい面接対策も、独自の攻略法でバッチリ対策。入室から退室までのマナーも含め、自信を持って話せるようになるまで徹底サポートします。
@@ -357,6 +357,10 @@ export default function Home() {
                 <dt className="text-sm font-bold text-yellow-800">レッスン</dt>
                 <dd className="text-gray-900 font-medium">週1回。学習計画・宿題・振り返りまで、家庭学習もサポートします</dd>
               </div>
+              <div>
+                <dt className="text-sm font-bold text-yellow-800">はじめての方</dt>
+                <dd className="text-gray-900 font-medium">カウンセリング（オンライン）と体験レッスン（教室）は無料です</dd>
+              </div>
             </dl>
             <div className="bg-white rounded-2xl shadow-md p-6">
               <p className="text-sm font-bold text-yellow-800 mb-3">月謝（グループレッスン・月額・税込）</p>
@@ -402,8 +406,8 @@ export default function Home() {
 
             {[
               { step: "STEP 01", title: "LINE登録", desc: "まずは公式LINEに登録して、無料特典をお受け取りください。", icon: <MessageCircle size={32} /> },
-              { step: "STEP 02", title: "無料カウンセリング", desc: "LINEから簡単に予約できます。お子様の現状や目標をお聞かせください。", icon: <Users size={32} /> },
-              { step: "STEP 03", title: "体験レッスン", desc: "実際のレッスンを体験。教室の雰囲気や指導法をチェック！", icon: <BookOpen size={32} /> },
+              { step: "STEP 02", title: "無料カウンセリング", desc: "LINEから簡単に予約できます。オンラインで、お子様の現状や目標をお聞かせください。", icon: <Users size={32} /> },
+              { step: "STEP 03", title: "無料体験レッスン", desc: "教室で実際のレッスンを体験。雰囲気や指導法をチェック！", icon: <BookOpen size={32} /> },
               { step: "STEP 04", title: "受講スタート", desc: "気に入っていただけたら入会。目標に向かって一緒に頑張りましょう！", icon: <CheckCircle size={32} /> },
             ].map((item, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col items-center text-center relative">
