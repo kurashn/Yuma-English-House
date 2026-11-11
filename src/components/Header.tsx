@@ -18,6 +18,7 @@ export default function Header() {
 
     const navItems = [
         { label: "選ばれる理由", href: "#reason" },
+        { label: "速読", href: "#sokudoku" },
         { label: "保護者様の声", href: "#voice" },
         { label: "講師紹介", href: "#teacher" },
         { label: "教室・料金", href: "#info" },

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { CheckCircle, MessageCircle, BookOpen, Users, ArrowRight, Frown, CircleHelp, TrendingDown, ChevronDown, MapPin, Quote } from "lucide-react";
 import HeroSlider from "@/components/HeroSlider";
 import Header from "@/components/Header";
-import { CTA_LABEL, HP_URL, HP_VOICES_URL, LINE_URL, MAP_URL, SCHOOL_ADDRESS } from "@/lib/site";
+import { CTA_LABEL, HP_SOKUDOKU_URL, HP_URL, HP_VOICES_URL, LINE_URL, MAP_URL, SCHOOL_ADDRESS } from "@/lib/site";
 
 // 掲載している事実は、すべて竹内さんのHP（yuma-english.com の「英検対策コース」「私たちについて」「よくあるご質問」「受講生様・保護者様の声」）から取っている。
 // 「|」で区切った言葉のまとまりごとに折り返す（日本語が言葉の途中で改行されないように）
@@ -28,6 +28,14 @@ const VOICES = [
     who: "生徒さんご本人",
     text: "単語帳をやった分だけできるようになるので達成感もあるし、解いていて楽しさや嬉しさも感じられました。",
   },
+];
+
+// ホームページの速読ページ（FOR EIKEN）の4段階をそのまま使う
+const SOKUDOKU_STEPS = [
+  { title: "読む力 UP", desc: "日本語で|「読む・理解する・処理する」|土台を育てる" },
+  { title: "英文を処理する|スピード UP", desc: "英語でも同じ回路が働く" },
+  { title: "長文問題に使う時間を短縮", desc: "読み返しが減り、|余裕が生まれる" },
+  { title: "考える・根拠を探す・|見直す時間が増える", desc: "ケアレスミスにも気づける" },
 ];
 
 const PRICES = [
@@ -238,6 +246,80 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Speed Reading Section（文はホームページの速読ページ /sokudoku/ から） */}
+      <section id="sokudoku" className="py-12 md:py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-10 md:mb-14">
+            <span className="text-yellow-700 font-bold tracking-wider uppercase">Speed Reading</span>
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mt-2">
+              <span className="inline-block">英検で、</span><span className="inline-block"><span className="marker">最後まで解き終わらない</span>子へ</span>
+            </h2>
+            <p className="mt-4 text-gray-600 leading-relaxed md:text-lg">
+              <Phrases text="もしかすると「勉強量」ではなく、|「読む・理解する・探すスピード」に|原因があるかもしれません。" />
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="relative w-full max-w-md mx-auto aspect-[4/3] md:aspect-[4/5]">
+              <Image
+                src="/images/sokudoku-reading.jpg"
+                alt="タブレットで速読解力トレーニングをする生徒"
+                fill
+                sizes="(min-width: 768px) 448px, 100vw"
+                className="object-cover rounded-2xl shadow-lg"
+              />
+            </div>
+            <div>
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">速読解力トレーニング</h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                慣れ親しんだ日本語で、すべての学習の土台となる「速く、正確に読み解く力」を育てます。「読む力」が変わると、英検で使える時間も変わります。
+              </p>
+              <ol className="space-y-3">
+                {SOKUDOKU_STEPS.map((step, i) => (
+                  <li key={step.title} className="flex gap-3 items-start bg-white rounded-xl p-4 shadow-sm">
+                    <span className="w-8 h-8 shrink-0 rounded-full bg-primary text-gray-900 font-bold flex items-center justify-center" aria-hidden="true">{i + 1}</span>
+                    <div>
+                      <p className="font-bold text-gray-900"><Phrases text={step.title} /></p>
+                      <p className="text-sm text-gray-600"><Phrases text={step.desc} /></p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+              <ul className="mt-6 flex flex-wrap gap-2 text-sm font-bold text-gray-700" aria-label="速読解力トレーニングの概要">
+                {["1回8〜30分", "教室・オンライン", "月6,600円（税込）", "読書速度チェック無料"].map((fact) => (
+                  <li key={fact} className="bg-white border border-yellow-300 rounded-full px-3 py-1 shadow-sm">{fact}</li>
+                ))}
+              </ul>
+              <p className="mt-4 text-xs text-gray-600 leading-relaxed">
+                ※速読だけで英検合格を保証するものではありません。単語・文法・リスニング・ライティングの力も必要です。
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-10 text-center">
+            <a
+              href={LINE_URL}
+              data-cta="sokudoku"
+              className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white text-lg font-bold py-4 px-8 rounded-full shadow-xl hover:shadow-2xl transition-all w-full md:w-auto whitespace-nowrap"
+            >
+              <MessageCircle className="w-6 h-6" />
+              {CTA_LABEL}
+            </a>
+            <p className="text-xs text-gray-600 mt-2"><Phrases text="※読書速度チェック（無料）も|LINEからお申し込みいただけます" /></p>
+            <p className="mt-4">
+              <a
+                href={HP_SOKUDOKU_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block py-3 text-gray-700 font-bold underline underline-offset-4 decoration-yellow-500"
+              >
+                速読解力トレーニングを詳しく見る（ホームページ）
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials */}
       <section id="voice" className="py-12 md:py-20 bg-yellow-50">
         <div className="container mx-auto px-4">
@@ -377,6 +459,7 @@ export default function Home() {
               <ul className="mt-4 space-y-1 text-sm text-gray-700">
                 <li>マンツーマン（個別）は各コース＋4,400円</li>
                 <li>入会金 11,000円（税込）</li>
+                <li>速読解力トレーニング 月額6,600円（税込）</li>
               </ul>
             </div>
           </div>

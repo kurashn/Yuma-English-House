@@ -9,3 +9,4 @@ export const MAP_URL =
 
 export const HP_URL = "https://yuma-english.com/";
 export const HP_VOICES_URL = "https://yuma-english.com/category/review/";
+export const HP_SOKUDOKU_URL = "https://yuma-english.com/sokudoku/";

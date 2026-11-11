@@ -69,7 +69,7 @@ export default function RootLayout({
             }
           `}
         </Script>
-        {/* LINEボタンが「どこで」押されたかを数える（line_click_hero / sticky / info / offer / header / menu） */}
+        {/* LINEボタンが「どこで」押されたかを数える（line_click_hero / sticky / sokudoku / info / offer / header / menu） */}
         <Script id="cta-tracking" strategy="afterInteractive">
           {`
             document.addEventListener('click', function (e) {
